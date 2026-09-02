@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Nova Search — discover more, search smarter.">
+<title>Nova Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="#"><i></i>Nova<span>Search</span></a><div class="nav-actions"><button id="theme" class="ghost">☼</button><button id="settings" class="ghost">⚙</button></div></header>
+<main>
+<section id="home" class="hero"><div class="orb"><b>⌕</b></div><h1>Nova Search</h1><p>Discover more. <strong>Search smarter.</strong></p></section>
+
+<section class="search-wrap">
+<form id="form" class="searchbar"><span>⌕</span><input id="q" placeholder="Search anything..." autocomplete="off"><button id="mic" type="button">🎙</button><button class="search-btn">→</button><div id="suggestions"></div></form>
+<div class="tabs">
+<button class="tab active" data-type="web">Web</button><button class="tab" data-type="images">Images</button><button class="tab" data-type="videos">Videos</button><button class="tab" data-type="news">News</button><button class="tab" data-type="places">Places</button>
+</div>
+</section>
+
+<section id="features" class="features">
+<article><span>⚡</span><h3>Fast search</h3><p>Clean, ranked results with pagination and a focused interface.</p></article>
+<article><span>🧠</span><h3>AI-ready</h3><p>Optional server-side AI answers can summarize current search context.</p></article>
+<article><span>🔐</span><h3>Private by design</h3><p>No tracking framework or client-side search API key.</p></article>
+</section>
+
+<section id="history" class="history hidden"><div class="row"><h2>Recent searches</h2><button id="clear">Clear</button></div><div id="historyList"></div></section>
+
+<section id="results" class="results hidden">
+<div class="result-top"><button id="back">← Home</button><span id="meta"></span></div>
+<div id="aiBox" class="ai hidden"></div><div id="resultList"></div>
+<div class="pager"><button id="prev">← Previous</button><button id="next">Next →</button></div>
+<div id="offline" class="offline hidden"></div>
+</section>
+</main>
+<footer><span>© 2026 Nova Search</span><span>Independent search interface</span></footer>
+<script src="app.js"></script>
+</body></html>
